@@ -13,9 +13,11 @@
 		8C435B88283296CB00BC846C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C435B86283296CB00BC846C /* Main.storyboard */; };
 		8C435B8A283296D500BC846C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C435B89283296D500BC846C /* Assets.xcassets */; };
 		8C435B8D283296D500BC846C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C435B8B283296D500BC846C /* LaunchScreen.storyboard */; };
+		99B133AD5322D37BB3DFC0F9 /* libPods-Class22-ios-8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61171CE59414F0E41F686894 /* libPods-Class22-ios-8.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61171CE59414F0E41F686894 /* libPods-Class22-ios-8.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Class22-ios-8.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C435B7D283296CB00BC846C /* Class22-ios-8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Class22-ios-8.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C435B80283296CB00BC846C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C435B82283296CB00BC846C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		8C435B89283296D500BC846C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C435B8C283296D500BC846C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C435B8E283296D500BC846C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF8EDE94218A79E83A78CEE /* Pods-Class22-ios-8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class22-ios-8.release.xcconfig"; path = "Target Support Files/Pods-Class22-ios-8/Pods-Class22-ios-8.release.xcconfig"; sourceTree = "<group>"; };
+		E8A979D32BB63799D358ED70 /* Pods-Class22-ios-8.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Class22-ios-8.debug.xcconfig"; path = "Target Support Files/Pods-Class22-ios-8/Pods-Class22-ios-8.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99B133AD5322D37BB3DFC0F9 /* libPods-Class22-ios-8.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33DE5FDCC2006C927FA5FA4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8A979D32BB63799D358ED70 /* Pods-Class22-ios-8.debug.xcconfig */,
+				DCF8EDE94218A79E83A78CEE /* Pods-Class22-ios-8.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C435B74283296CB00BC846C = {
 			isa = PBXGroup;
 			children = (
 				8C435B7F283296CB00BC846C /* Class22-ios-8 */,
 				8C435B7E283296CB00BC846C /* Products */,
+				33DE5FDCC2006C927FA5FA4B /* Pods */,
+				A42138F1FC3B853D4482C2EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Class22-ios-8";
 			sourceTree = "<group>";
 		};
+		A42138F1FC3B853D4482C2EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61171CE59414F0E41F686894 /* libPods-Class22-ios-8.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C435B91283296D500BC846C /* Build configuration list for PBXNativeTarget "Class22-ios-8" */;
 			buildPhases = (
+				6CBB9F68C32C21063E04F3AA /* [CP] Check Pods Manifest.lock */,
 				8C435B79283296CB00BC846C /* Sources */,
 				8C435B7A283296CB00BC846C /* Frameworks */,
 				8C435B7B283296CB00BC846C /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CBB9F68C32C21063E04F3AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Class22-ios-8-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C435B79283296CB00BC846C /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		8C435B92283296D500BC846C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A979D32BB63799D358ED70 /* Pods-Class22-ios-8.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,12 +355,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8C435B93283296D500BC846C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF8EDE94218A79E83A78CEE /* Pods-Class22-ios-8.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +383,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

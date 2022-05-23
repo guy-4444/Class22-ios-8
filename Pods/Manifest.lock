@@ -1,0 +1,20 @@
+PODS:
+  - ConfettiView (0.1.7)
+  - Kingfisher (7.2.2)
+
+DEPENDENCIES:
+  - ConfettiView
+  - Kingfisher (~> 7.0)
+
+SPEC REPOS:
+  trunk:
+    - ConfettiView
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  ConfettiView: e70aa9be11d778d2c2778429aad92fa6f5d9c6e7
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+
+PODFILE CHECKSUM: 64c5e5de1fe2882a66edb256b068fdf368669550
+
+COCOAPODS: 1.11.3

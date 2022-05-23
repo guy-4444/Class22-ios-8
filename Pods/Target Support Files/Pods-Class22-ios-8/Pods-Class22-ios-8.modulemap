@@ -1,0 +1,6 @@
+module Pods_Class22_ios_8 {
+  umbrella header "Pods-Class22-ios-8-umbrella.h"
+
+  export *
+  module * { export * }
+}
